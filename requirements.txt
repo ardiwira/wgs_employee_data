@@ -1,0 +1,8 @@
+# requirements.txt
+
+robotframework==4.0.3
+robotframework-seleniumlibrary==6.0.0
+behave==1.2.6
+requests==2.26.0
+pytest==6.2.5
+pytest-robot==1.0.0

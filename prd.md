@@ -1,0 +1,166 @@
+WGS Employee Data
+
+Deskripsi Proyek
+WGS Employee Data adalah aplikasi yang dirancang untuk mendata karyawan di Walden Global Services (WGS) dan perusahaan terkait. Aplikasi ini memungkinkan manajemen data karyawan secara sistematis, termasuk informasi pribadi, dokumen administratif, dan fitur lain yang mendukung operasional perusahaan.
+
+Fitur Utama
+
+1. Login 
+	- Menampilkan fomulir login untuk bisa mengakses halaman dashboard
+	- Pengguna yang dapat melakukan login yaitu:
+		- HR
+		- Admin HR
+		- Karyawan lain yang diberi hak akses
+	- Dapat melakukan input Username yang sudah terdaftar "Username: user_hradm_001"
+	- Dapat melakukan input "Password: Password1"
+	- Pengguna dapat menekan tombol button "Login"
+	- system harus bisa memverifikasi kredensial pengguna
+	- system harus bisa menampilkan dashboard 
+	- system harus bisa menampilkan notifikasi "Login Berhasil"
+
+2. Dashboard 
+	- Ringkasan Data Karyawan
+	    - Jumlah karyawan berdasarkan:
+			- perusahaan
+			- status kepegawaian
+			- posisi
+		- Jumlah karyawan baru berdasarkan:
+			- perusahaan
+			- status kepegawaian
+			- posisi
+		- Jumlah karyawan resign berdasarkan:
+			- perusahaan
+			- status kepegawaian
+			- posisi
+	- Persentase Absensi dan kehadiran berdasarkan:
+		- kehadiran dikantor
+		- kehadiran secara remote
+		- kehadiran perjalanan dinas
+		- tingkat keterlambatan
+		- karyawan tidak hadir per-hari nya	 
+	- Pengajuan berdasarkan:
+		- Lembur
+		- Cuti
+		- Izin
+		- Reimburese
+	- Pengumuman berdasarkan:
+		- Perusahaan
+3. User Management (CRUD)
+	- Create:
+        - Menambahkan Data Karyawan Baru.
+		- Informasi Formulir Data Karyawan yaitu sebagai berikut:
+		    - Informasi Pribadi:
+    			- Nama Panggilan
+                - Nama Lengkap
+        		- Tempat, Tanggal Lahir
+			    - Nomor Telepon
+  				- Email Pribadi
+                - Email Kantor
+                - Alamat Rumah
+                - Alamat Tinggal Sekarang
+       			- Foto Profil
+      		- Informasi Keluarga:
+        		- Nama Orang Tua
+                - Nama Pasangan (jika ada)
+                - Nama Pasangan (jika ada)
+        		- Nama Saudara Kandung (opsional)
+        		- Nama Kontak Darurat
+       			- Nomor Telepon Kontak Darurat
+        		- Alamat Kontak Darurat
+       		- Informasi Kepegawaian:
+       			- Tanggal Masuk Kerja
+                - Tanggal Keluar Kerja (jika sudah resign)
+      			- Company / Perusahaan Tempat Bernaung (WGS, Emveep, dll.) (Dinamis edit by HR)
+       			- Posisi & Divisi (Dinamis edit by HR)
+      			- Status Kepegawaian (Kontrak, Tetap, Magang) (Dinamis edit by HR)
+      			- Nomor Rekening & Nama Bank
+      		- Pendidikan & Keahlian:
+      			- Pendidikan Terakhir
+       		    - Detail Keahlian (Array) (Teknologi yang dikuasai, soft skills, dll.)
+      		- Riwayat Kesehatan:
+      		    - Riwayat Penyakit (opsional, jika perlu dicatat untuk keperluan asuransi/medis)
+            - Dokumen Karyawan:
+                - KTP
+                - NPWP
+                - Ijazah
+                - Transkrip Nilai
+                - CV Pribadi
+      			- CV Perusahaan
+      			- Sertifikat (jika ada, seperti pelatihan, sertifikasi keahlian, dll.)
+    - Read: 
+        - List Karyawan: Menampilkan daftar seluruh karyawan yang terdaftar dalam sistem.
+		- Detail Karyawan: Menampilkan lengkap informasi tentang seorang Karyawan
+		- Memiliki Kolom Data Karyawan sebagai berikut
+		- Informasi Formulir Data Karyawan yaitu sebagai berikut:
+		    - Informasi Pribadi:
+    			- Nama Panggilan
+                - Nama Lengkap
+        		- Tempat, Tanggal Lahir
+			    - Nomor Telepon
+  				- Email Pribadi
+                - Email Kantor
+                - Alamat Rumah
+                - Alamat Tinggal Sekarang
+       			- Foto Profil
+      		- Informasi Keluarga:
+        		- Nama Orang Tua
+                - Nama Pasangan (jika ada)
+        		- Nama Saudara Kandung (opsional)
+        		- Nama Kontak Darurat
+       			- Nomor Telepon Kontak Darurat
+        		- Alamat Kontak Darurat
+       		- Informasi Kepegawaian:
+       			- Tanggal Masuk Kerja
+                - Tanggal Keluar Kerja (jika sudah resign)
+      			- Company / Perusahaan Tempat Bernaung (WGS, Emveep, dll.) (Dinamis edit by HR)
+       			- Posisi & Divisi (Dinamis edit by HR)
+      			- Status Kepegawaian (Kontrak, Tetap, Magang) (Dinamis edit by HR)
+      			- Nomor Rekening & Nama Bank
+      		- Pendidikan & Keahlian:
+      			- Pendidikan Terakhir
+       			- Detail Keahlian (Array) (Teknologi yang dikuasai, soft skills, dll.)
+      		- Riwayat Kesehatan:
+      			- Riwayat Penyakit (opsional, jika perlu dicatat untuk keperluan asuransi/medis)
+            - Dokumen Karyawan:
+                - KTP
+                - NPWP
+                - Ijazah
+                - Transkrip Nilai
+                - CV Pribadi
+      			- CV Perusahaan
+      			- Sertifikat (jika ada, seperti pelatihan, sertifikasi keahlian, dll.)
+		- Fitur pencarian dan filter berdasarkan nama, posisi, divisi, atau status kepegawaian.
+	- Update: 
+        - Mengedit Data Karyawan, Mengubah Peran atau Jabatan, Merubah Password Karyawan.
+	- Delete:  
+        - Menghapus Data Karyawan 
+		- Akan terlihat terhapus tetapi system akan mengeset menjadi nonaktif
+4. Role Management
+	- Role Management akan memiliki peran sebagai berikut:
+		- Super Admin:	
+            - Akses penuh ke semua fitur dalam system.
+		- Manager HR:	
+            - Akses penuh (CRUD) untuk menambah, mengubah, menghapus, dan mengunduh data karyawan. 
+			- Juga dapat melihat rekap data kepegawaian.
+			- Serta menambah HR baru.
+		- HR:	
+            - Akses penuh (CRUD) untuk menambah, mengubah, menghapus, dan mengunduh data karyawan.
+			- Juga dapat melihat rekap data kepegawaian.
+		- Auditor:	
+            - Dapat melihat seluruh data karyawan dan mengunduh data tanpa dapat mengedit atau menghapus.
+		- Employee:	
+            - Hanya dapat melihat dan memperbarui data diri sendiri. 
+			- Tidak dapat mengakses data karyawan lain. (Karyawan Biasa) 
+5. Laporan: Diperlihatkan Daftar Laporan serta dapat dilakkanya unduh dalam format PDF / Excel untuk keperluan administrasi.
+6. Notifikasi dan Pengingat
+	- Notifikasi perubahan status kepegawaian.
+	- Notifikas perubahan Data Karyawan.
+	- Notifikasi peubahan Password.
+	- Notifikasi untuk memperbaharui dokumen yang hampir kadaluarsa (misalnya, NPWP, sertifikat).
+7. Audit Trail: Mencatat seluruh aktifitas perubahan data karyawan untuk transparansi.
+8. Logout dari aplikasi  
+    - Menampilkan pengguna yang telah berada di halaman dashboard aplikasi  
+    - Akan keluar dari aplkasi pengguna menekan tombol "Logout"  
+  	- Sistem mengakhiri sesi pengguna  
+	- Sistem mengarahkan pengguna ke halaman login  
+	- Sistem menampilkan notifikasi "Anda telah logout" 
